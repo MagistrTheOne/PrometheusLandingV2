@@ -18,9 +18,9 @@ const investmentRounds = [
   {
     round: "Seed",
     amount: "$2M",
-    status: "Завершен",
+    status: "в стадии подготовки",
     investors: "AI Ventures, Tech Angels",
-    use: "Разработка MVP, команда"
+    use: "Тизер для инвесторов"
   },
   {
     round: "Series A",
@@ -34,7 +34,7 @@ const investmentRounds = [
     amount: "$50M",
     status: "Планируется",
     investors: "Strategic Partners",
-    use: "Глобальная экспансия"
+    use: "Глобальная экспансия|Техническая разработка|Вывод на рынок"
   }
 ]
 
@@ -99,13 +99,8 @@ export function TeamSection() {
               <span className="text-white font-bold text-2xl">$500 МИЛЛИАРДОВ</span> - именно столько предлагают за Prometheus AGI!
             </p>
             <p className="text-lg text-gray-300">
-              Крупнейшие корпорации мира уже выстроились в очередь. Мы дождемся этих козлов и получим еще больше! 🚀
+              Крупнейшие корпорации мира уже выстроились в очередь.
             </p>
-            <div className="mt-6 flex justify-center">
-              <div className="bg-white/10 rounded-full px-6 py-2 border border-white/20">
-                <span className="text-white font-semibold">ОТКАЗЫВАЕМСЯ ОТ ПРЕДЛОЖЕНИЙ</span>
-              </div>
-            </div>
           </div>
         </motion.div>
 
