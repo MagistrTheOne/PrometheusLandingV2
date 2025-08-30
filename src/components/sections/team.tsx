@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Users, Award, Globe, TrendingUp } from "lucide-react"
+import { ArrowRight, Users, Award, Globe, TrendingUp, DollarSign } from "lucide-react"
 
 const teamMembers = [
   {
@@ -82,6 +82,33 @@ export function TeamSection() {
           ))}
         </div>
 
+        {/* Горячие новости о покупке */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          viewport={{ once: true }}
+          className="mb-16"
+        >
+          <div className="bg-gradient-to-r from-red-900/20 to-orange-900/20 border border-red-500/30 rounded-lg p-8 text-center">
+            <div className="flex items-center justify-center gap-3 mb-4">
+              <DollarSign className="w-8 h-8 text-red-400" />
+              <h3 className="text-2xl font-bold text-white">🔥 ГОРЯЧИЕ НОВОСТИ! 🔥</h3>
+            </div>
+            <p className="text-xl text-gray-300 mb-4">
+              <span className="text-white font-bold text-2xl">$500 МИЛЛИАРДОВ</span> - именно столько предлагают за Prometheus AGI!
+            </p>
+            <p className="text-lg text-gray-300">
+              Крупнейшие корпорации мира уже выстроились в очередь. Мы дождемся этих козлов и получим еще больше! 🚀
+            </p>
+            <div className="mt-6 flex justify-center">
+              <div className="bg-white/10 rounded-full px-6 py-2 border border-white/20">
+                <span className="text-white font-semibold">ОТКАЗЫВАЕМСЯ ОТ ПРЕДЛОЖЕНИЙ</span>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
         {/* Инвестиции */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -158,10 +185,10 @@ export function TeamSection() {
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <TrendingUp className="w-8 h-8 text-white" />
+                <DollarSign className="w-8 h-8 text-white" />
               </div>
-              <h4 className="text-xl font-semibold mb-2 text-white">$50M+</h4>
-              <p className="text-gray-300">Рыночная оценка</p>
+              <h4 className="text-xl font-semibold mb-2 text-white">$500B+</h4>
+              <p className="text-gray-300">Предложение о покупке</p>
             </div>
           </div>
         </motion.div>

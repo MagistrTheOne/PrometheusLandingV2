@@ -5,18 +5,18 @@ import { LineChart, Line, AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip,
 import { TrendingUp, DollarSign, Users, Target } from "lucide-react"
 
 const revenueData = [
-  { month: "Янв", revenue: 0, projection: 0 },
-  { month: "Фев", revenue: 0, projection: 0 },
-  { month: "Мар", revenue: 0, projection: 0 },
-  { month: "Апр", revenue: 0, projection: 0 },
-  { month: "Май", revenue: 0, projection: 0 },
-  { month: "Июн", revenue: 0, projection: 0 },
-  { month: "Июл", revenue: 0, projection: 0 },
-  { month: "Авг", revenue: 0, projection: 0 },
-  { month: "Сен", revenue: 0, projection: 0 },
-  { month: "Окт", revenue: 0, projection: 0 },
-  { month: "Ноя", revenue: 0, projection: 0 },
-  { month: "Дек", revenue: 0, projection: 0 },
+  { month: "Янв 2024", revenue: 0, projection: 0 },
+  { month: "Фев 2024", revenue: 0, projection: 0 },
+  { month: "Мар 2024", revenue: 0, projection: 0 },
+  { month: "Апр 2024", revenue: 0, projection: 0 },
+  { month: "Май 2024", revenue: 0, projection: 0 },
+  { month: "Июн 2024", revenue: 0, projection: 0 },
+  { month: "Июл 2024", revenue: 0, projection: 0 },
+  { month: "Авг 2024", revenue: 0, projection: 0 },
+  { month: "Сен 2024", revenue: 0, projection: 0 },
+  { month: "Окт 2024", revenue: 0, projection: 0 },
+  { month: "Ноя 2024", revenue: 0, projection: 0 },
+  { month: "Дек 2024", revenue: 0, projection: 0 },
   { month: "2025", revenue: 0, projection: 0 },
   { month: "2026", revenue: 0, projection: 0 },
   { month: "2027", revenue: 0, projection: 0 },
@@ -68,8 +68,8 @@ export function MetricsSection() {
             <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
               <DollarSign className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-3xl font-bold mb-2 text-white">$50M+</h3>
-            <p className="text-gray-300">Рыночная оценка</p>
+            <h3 className="text-3xl font-bold mb-2 text-white">$500B+</h3>
+            <p className="text-gray-300">Предложение о покупке</p>
           </div>
           <div className="text-center p-6 bg-black rounded-lg border border-gray-800">
             <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -188,6 +188,13 @@ export function MetricsSection() {
           className="mt-12 bg-black p-6 rounded-lg border border-gray-800"
         >
           <h3 className="text-xl font-semibold mb-6 text-white">Прогноз доходов (2024-2027)</h3>
+          <div className="mb-6 p-4 bg-white/5 rounded-lg border border-white/10">
+            <h4 className="text-lg font-bold text-white mb-2">🔥 Горячие новости!</h4>
+            <p className="text-gray-300">
+              <span className="text-white font-semibold">$500 миллиардов</span> - именно столько предлагают за Prometheus AGI! 
+              Крупнейшие корпорации мира уже выстроились в очередь. Мы дождемся этих козлов и получим еще больше! 🚀
+            </p>
+          </div>
           <ResponsiveContainer width="100%" height={400}>
             <AreaChart data={revenueData}>
               <CartesianGrid strokeDasharray="3 3" stroke="#333" />
