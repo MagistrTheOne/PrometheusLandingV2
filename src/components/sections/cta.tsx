@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Mail, Phone, MapPin, Brain } from "lucide-react"
+import { ArrowRight, Brain, Mail, Phone, MapPin, Linkedin } from "lucide-react"
 
 export function CTASection() {
   return (
@@ -23,7 +23,7 @@ export function CTASection() {
             Присоединяйтесь к <span className="text-white">революции AGI</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-            Станьте частью истории создания первой в мире AGI системы. 
+            Станьте частью истории создания первой в мире AGI системы.
             Инвестируйте в будущее технологий сегодня.
           </p>
         </motion.div>
@@ -38,13 +38,13 @@ export function CTASection() {
           <div className="bg-black p-8 rounded-lg border border-gray-800">
             <h3 className="text-2xl font-bold mb-4 text-white">Для инвесторов</h3>
             <p className="text-gray-300 mb-6">
-              Уникальная возможность инвестировать в первую в мире AGI систему. 
+              Уникальная возможность инвестировать в первую в мире AGI систему.
               Высокий потенциал роста и стратегическое партнерство.
             </p>
-            <div className="space-y-4">
+            <div className="space-y-4 mb-6">
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-white rounded-full"></div>
-                <span className="text-white">Минимальная инвестиция: $100K</span>
+                <span className="text-white">Минимальная инвестиция: $1M</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-white rounded-full"></div>
@@ -55,19 +55,25 @@ export function CTASection() {
                 <span className="text-white">Выход: 3-5 лет</span>
               </div>
             </div>
-            <Button size="lg" variant="gradient" className="w-full mt-6">
-              Инвестировать сейчас
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
+            <a 
+              href="https://www.linkedin.com/in/magistrtheone/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Button size="lg" variant="gradient" className="w-full text-lg px-8 py-4 bg-white text-black hover:bg-gray-100">
+                Инвестировать сейчас
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </a>
           </div>
 
           <div className="bg-black p-8 rounded-lg border border-gray-800">
             <h3 className="text-2xl font-bold mb-4 text-white">Для партнеров</h3>
             <p className="text-gray-300 mb-6">
-              Интегрируйте Prometheus AGI в ваши системы. 
+              Интегрируйте Prometheus AGI в ваши системы.
               Получите конкурентное преимущество с передовой технологией.
             </p>
-            <div className="space-y-4">
+            <div className="space-y-4 mb-6">
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-white rounded-full"></div>
                 <span className="text-white">API интеграция</span>
@@ -81,10 +87,16 @@ export function CTASection() {
                 <span className="text-white">Кастомизация под ваши нужды</span>
               </div>
             </div>
-            <Button size="lg" variant="outline" className="w-full mt-6">
-              Заказать демо
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
+            <a 
+              href="https://www.linkedin.com/in/magistrtheone/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Button size="lg" variant="outline" className="w-full text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-black">
+                Заказать демо
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </a>
           </div>
         </motion.div>
 
@@ -97,27 +109,51 @@ export function CTASection() {
           className="bg-gray-900 rounded-lg border border-gray-800 p-8"
         >
           <h3 className="text-2xl font-bold mb-8 text-center text-white">Свяжитесь с нами</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Mail className="w-8 h-8 text-white" />
               </div>
               <h4 className="text-lg font-semibold mb-2 text-white">Email</h4>
-              <p className="text-gray-300">contact@prometheus-agi.com</p>
+              <a 
+                href="mailto:maxonyushko71@gmail.com" 
+                className="text-gray-300 hover:text-white transition-colors"
+              >
+                maxonyushko71@gmail.com
+              </a>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Phone className="w-8 h-8 text-white" />
               </div>
               <h4 className="text-lg font-semibold mb-2 text-white">Телефон</h4>
-              <p className="text-gray-300">+7 (495) 123-45-67</p>
+              <a 
+                href="tel:+79884135937" 
+                className="text-gray-300 hover:text-white transition-colors"
+              >
+                +7 988 413 59 37
+              </a>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MapPin className="w-8 h-8 text-white" />
               </div>
               <h4 className="text-lg font-semibold mb-2 text-white">Адрес</h4>
-              <p className="text-gray-300">Москва, Россия</p>
+              <p className="text-gray-300">Краснодар, Россия</p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Linkedin className="w-8 h-8 text-white" />
+              </div>
+              <h4 className="text-lg font-semibold mb-2 text-white">LinkedIn</h4>
+              <a 
+                href="https://www.linkedin.com/in/magistrtheone/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-white transition-colors"
+              >
+                MagistrTheOne
+              </a>
             </div>
           </div>
         </motion.div>

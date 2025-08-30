@@ -55,7 +55,6 @@ export function Footer() {
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">AGI Platform</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">API</a></li>
               <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Документация</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition-colors">Демо</a></li>
             </ul>
           </div>
         </div>

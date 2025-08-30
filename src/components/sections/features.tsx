@@ -96,7 +96,7 @@ export function FeaturesSection() {
                 <tr className="border-b border-gray-800">
                   <th className="text-left py-4 px-4 font-semibold text-white">Характеристика</th>
                   <th className="text-center py-4 px-4 font-semibold text-white">Prometheus AGI</th>
-                  <th className="text-center py-4 px-4 font-semibold text-gray-300">GPT-4</th>
+                  <th className="text-center py-4 px-4 font-semibold text-gray-300">GPT-5</th>
                   <th className="text-center py-4 px-4 font-semibold text-gray-300">Claude</th>
                   <th className="text-center py-4 px-4 font-semibold text-gray-300">Gemini</th>
                 </tr>
@@ -140,19 +140,6 @@ export function FeaturesSection() {
               </tbody>
             </table>
           </div>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mt-12"
-        >
-          <Button size="lg" variant="gradient" className="text-lg px-8 py-4">
-            Узнать больше о технологии
-            <ArrowRight className="ml-2 w-5 h-5" />
-          </Button>
         </motion.div>
       </div>
     </section>

@@ -10,7 +10,7 @@ export function HeroSection() {
       {/* Фоновые элементы */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800" />
       <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.03%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%221%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-30" />
-      
+
       {/* Анимированные круги */}
       <motion.div
         className="absolute top-20 left-20 w-32 h-32 bg-white/5 rounded-full blur-xl"
@@ -39,7 +39,7 @@ export function HeroSection() {
 
       <div className="relative z-10 container mx-auto px-4 text-center">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="mb-8"
@@ -78,13 +78,25 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
         >
-          <Button size="lg" variant="gradient" className="text-lg px-8 py-4 bg-white text-black hover:bg-gray-100">
-            Инвестировать сейчас
-            <ArrowRight className="ml-2 w-5 h-5" />
-          </Button>
-          <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-black">
-            Заказать демо
-          </Button>
+          <a 
+            href="https://www.linkedin.com/in/magistrtheone/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <Button size="lg" variant="gradient" className="text-lg px-8 py-4 bg-white text-black hover:bg-gray-100">
+              Инвестировать сейчас
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/magistrtheone/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-white text-white hover:bg-white hover:text-black">
+              Заказать демо
+            </Button>
+          </a>
         </motion.div>
 
         <motion.div
@@ -119,15 +131,27 @@ export function HeroSection() {
 
       {/* Плавающий элемент */}
       <motion.div
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        animate={{
+          y: [0, 10, 0],
+        }}
+        transition={{
+          duration: 2,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
       >
         <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
           <motion.div
             className="w-1 h-3 bg-white rounded-full mt-2"
-            animate={{ y: [0, 12, 0] }}
-            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            animate={{
+              y: [0, 12, 0],
+            }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              ease: "easeInOut",
+            }}
           />
         </div>
       </motion.div>
