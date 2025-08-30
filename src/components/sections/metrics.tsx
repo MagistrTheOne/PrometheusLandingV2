@@ -39,7 +39,7 @@ const marketData = [
 
 export function MetricsSection() {
   return (
-    <section className="py-20 bg-secondary/50">
+    <section className="py-20 bg-gray-900">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -49,9 +49,9 @@ export function MetricsSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="gradient-text">Метрики роста</span>
+            <span className="text-white">Метрики роста</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Демонстрируем впечатляющие результаты и прогнозы развития Prometheus AGI
           </p>
         </motion.div>
@@ -64,33 +64,33 @@ export function MetricsSection() {
           viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16"
         >
-          <div className="text-center p-6 bg-background rounded-lg border border-border">
-            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <DollarSign className="w-8 h-8 text-primary" />
+          <div className="text-center p-6 bg-black rounded-lg border border-gray-800">
+            <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <DollarSign className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-3xl font-bold mb-2 gradient-text">$50M+</h3>
-            <p className="text-muted-foreground">Рыночная оценка</p>
+            <h3 className="text-3xl font-bold mb-2 text-white">$50M+</h3>
+            <p className="text-gray-300">Рыночная оценка</p>
           </div>
-          <div className="text-center p-6 bg-background rounded-lg border border-border">
-            <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <TrendingUp className="w-8 h-8 text-accent" />
+          <div className="text-center p-6 bg-black rounded-lg border border-gray-800">
+            <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <TrendingUp className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-3xl font-bold mb-2 gradient-text">400%</h3>
-            <p className="text-muted-foreground">Рост производительности</p>
+            <h3 className="text-3xl font-bold mb-2 text-white">400%</h3>
+            <p className="text-gray-300">Рост производительности</p>
           </div>
-          <div className="text-center p-6 bg-background rounded-lg border border-border">
-            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Users className="w-8 h-8 text-primary" />
+          <div className="text-center p-6 bg-black rounded-lg border border-gray-800">
+            <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Users className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-3xl font-bold mb-2 gradient-text">1M+</h3>
-            <p className="text-muted-foreground">Потенциальных клиентов</p>
+            <h3 className="text-3xl font-bold mb-2 text-white">1M+</h3>
+            <p className="text-gray-300">Потенциальных клиентов</p>
           </div>
-          <div className="text-center p-6 bg-background rounded-lg border border-border">
-            <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Target className="w-8 h-8 text-accent" />
+          <div className="text-center p-6 bg-black rounded-lg border border-gray-800">
+            <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Target className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-3xl font-bold mb-2 gradient-text">95%</h3>
-            <p className="text-muted-foreground">Точность решений</p>
+            <h3 className="text-3xl font-bold mb-2 text-white">95%</h3>
+            <p className="text-gray-300">Точность решений</p>
           </div>
         </motion.div>
 
@@ -102,46 +102,47 @@ export function MetricsSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
-            className="bg-background p-6 rounded-lg border border-border"
+            className="bg-black p-6 rounded-lg border border-gray-800"
           >
-            <h3 className="text-xl font-semibold mb-6">Сравнение с конкурентами</h3>
+            <h3 className="text-xl font-semibold mb-6 text-white">Сравнение с конкурентами</h3>
             <ResponsiveContainer width="100%" height={300}>
               <LineChart data={growthData}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#333" />
-                <XAxis dataKey="year" stroke="#888" />
-                <YAxis stroke="#888" />
+                <XAxis dataKey="year" stroke="#a0a0a0" />
+                <YAxis stroke="#a0a0a0" />
                 <Tooltip 
                   contentStyle={{ 
-                    backgroundColor: '#1a1a1a', 
+                    backgroundColor: '#000000', 
                     border: '1px solid #333',
-                    borderRadius: '8px'
+                    borderRadius: '8px',
+                    color: '#ffffff'
                   }}
                 />
                 <Line 
                   type="monotone" 
                   dataKey="prometheus" 
-                  stroke="#00d4ff" 
+                  stroke="#ffffff" 
                   strokeWidth={3}
                   name="Prometheus AGI"
                 />
                 <Line 
                   type="monotone" 
                   dataKey="gpt" 
-                  stroke="#888" 
+                  stroke="#666" 
                   strokeWidth={2}
                   name="GPT"
                 />
                 <Line 
                   type="monotone" 
                   dataKey="claude" 
-                  stroke="#666" 
+                  stroke="#444" 
                   strokeWidth={2}
                   name="Claude"
                 />
                 <Line 
                   type="monotone" 
                   dataKey="gemini" 
-                  stroke="#444" 
+                  stroke="#222" 
                   strokeWidth={2}
                   name="Gemini"
                 />
@@ -155,22 +156,23 @@ export function MetricsSection() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             viewport={{ once: true }}
-            className="bg-background p-6 rounded-lg border border-border"
+            className="bg-black p-6 rounded-lg border border-gray-800"
           >
-            <h3 className="text-xl font-semibold mb-6">Рыночное присутствие по секторам</h3>
+            <h3 className="text-xl font-semibold mb-6 text-white">Рыночное присутствие по секторам</h3>
             <ResponsiveContainer width="100%" height={300}>
               <BarChart data={marketData}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#333" />
-                <XAxis dataKey="sector" stroke="#888" />
-                <YAxis stroke="#888" />
+                <XAxis dataKey="sector" stroke="#a0a0a0" />
+                <YAxis stroke="#a0a0a0" />
                 <Tooltip 
                   contentStyle={{ 
-                    backgroundColor: '#1a1a1a', 
+                    backgroundColor: '#000000', 
                     border: '1px solid #333',
-                    borderRadius: '8px'
+                    borderRadius: '8px',
+                    color: '#ffffff'
                   }}
                 />
-                <Bar dataKey="prometheus" fill="#00d4ff" name="Prometheus AGI" />
+                <Bar dataKey="prometheus" fill="#ffffff" name="Prometheus AGI" />
                 <Bar dataKey="competitors" fill="#666" name="Конкуренты" />
               </BarChart>
             </ResponsiveContainer>
@@ -183,27 +185,28 @@ export function MetricsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8 }}
           viewport={{ once: true }}
-          className="mt-12 bg-background p-6 rounded-lg border border-border"
+          className="mt-12 bg-black p-6 rounded-lg border border-gray-800"
         >
-          <h3 className="text-xl font-semibold mb-6">Прогноз доходов (2024-2027)</h3>
+          <h3 className="text-xl font-semibold mb-6 text-white">Прогноз доходов (2024-2027)</h3>
           <ResponsiveContainer width="100%" height={400}>
             <AreaChart data={revenueData}>
               <CartesianGrid strokeDasharray="3 3" stroke="#333" />
-              <XAxis dataKey="month" stroke="#888" />
-              <YAxis stroke="#888" />
+              <XAxis dataKey="month" stroke="#a0a0a0" />
+              <YAxis stroke="#a0a0a0" />
               <Tooltip 
                 contentStyle={{ 
-                  backgroundColor: '#1a1a1a', 
+                  backgroundColor: '#000000', 
                   border: '1px solid #333',
-                  borderRadius: '8px'
+                  borderRadius: '8px',
+                  color: '#ffffff'
                 }}
               />
               <Area 
                 type="monotone" 
                 dataKey="projection" 
                 stackId="1"
-                stroke="#00ff88" 
-                fill="#00ff88" 
+                stroke="#f5f5f5" 
+                fill="#f5f5f5" 
                 fillOpacity={0.3}
                 name="Прогноз"
               />
@@ -211,8 +214,8 @@ export function MetricsSection() {
                 type="monotone" 
                 dataKey="revenue" 
                 stackId="1"
-                stroke="#00d4ff" 
-                fill="#00d4ff" 
+                stroke="#ffffff" 
+                fill="#ffffff" 
                 fillOpacity={0.6}
                 name="Доходы"
               />
